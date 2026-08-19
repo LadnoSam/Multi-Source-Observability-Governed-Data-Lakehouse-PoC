@@ -20,21 +20,21 @@ The system is intentionally built without cloud-managed services (no AWS, no man
                         │  CoinGecko API ──▶ eth_collector ──▶ MongoDB │
                         └───────────────┬──────────────────────────────┘
                                         │
-                        ┌───────────────▼───────────────────────────┐
-                        │                 Grafana                    │
-                        │  Dashboard 1 (InfluxDB)                     │
+                        ┌───────────────▼──────────────────────────────┐
+                        │                 Grafana                      │
+                        │  Dashboard 1 (InfluxDB)                      │
                         │  Dashboard 2 (MongoDB via eth_api + Infinity)│
-                        │  Access scoped by Team → Folder permissions │
-                        └───────────────┬───────────────────────────┘
+                        │  Access scoped by Team → Folder permissions  │
+                        └───────────────┬──────────────────────────────┘
                                         │ OAuth2 login
                         ┌───────────────▼──────────────────────────────┐
                         │                Keycloak                      │
                         │  Realm roles: dashboard-{1,2}-{viewer,editor}│
                         │               universal-admin, service_admin │
-                        └───────┬───────────────────────┬──────────────┘
-                                │ OAuth2 login          │ OIDC client credentials
-                                │                       │
-                        (Grafana, above)          ┌───────▼─────────┐
+                        └───────┬────────────────────────┬─────────────┘
+                                │ OAuth2 login           │ OIDC client credentials
+                                │                        │
+                        (Grafana, above)          ┌──────▼───────────┐
                                                   │  Apache Polaris  │
                                                   │  REST Catalog    │
                                                   │  auth: external  │
@@ -48,8 +48,8 @@ The system is intentionally built without cloud-managed services (no AWS, no man
                                                    │  S3-compatible  │
                                                    │  object storage │
                                                    └───────▲─────────┘
-                                                            │ writes/reads
-                                                            │ Iceberg tables
+                                                           │ writes/reads
+                                                           │ Iceberg tables
                                                    ┌───────┴─────────────┐
                                                    │   spark-sync        │
                                                    │  PySpark, runs      │
