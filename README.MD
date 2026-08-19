@@ -104,8 +104,8 @@ The system is intentionally built without cloud-managed services (no AWS, no man
 ### 1. Clone and start the core stack
 
 ```bash
-git clone <this-repo>
-cd <this-repo>
+git clone https://github.com/LadnoSam/Multi-Source-Observability-Governed-Data-Lakehouse-PoC.git
+cd Multi-Source-Observability-Governed-Data-Lakehouse-PoC
 docker compose up -d
 ```
 
