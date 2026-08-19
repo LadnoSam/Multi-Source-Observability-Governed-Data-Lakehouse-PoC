@@ -65,7 +65,7 @@ The system is intentionally built without cloud-managed services (no AWS, no man
 | Metrics collection                | Telegraf           |
 | Document storage                  | MongoDB 7          |
 | Custom API layer                  | FastAPI (Python)   |
-| Dashboards                        | Grafana 11.6       |
+| Dashboards                        | Grafana 11.6.1     |
 | Grafana external datasource       | Infinity plugin    |
 | Identity & access management      | Keycloak 24        |
 | Table format                      | Apache Iceberg 1.6 |
