@@ -5,7 +5,7 @@ from pymongo import MongoClient
 from datetime import datetime, timezone
 
 MONGO_URL = os.getenv("MONGO_URL", "mongodb://mongo:27017")
-POLL_INTERVAL = int(os.getenv("POLL_INTERVAL", "30"))  # секунд
+POLL_INTERVAL = int(os.getenv("POLL_INTERVAL", "30"))  
 
 CG_URL = (
     "https://api.coingecko.com/api/v3/simple/price"
