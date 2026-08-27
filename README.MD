@@ -14,11 +14,11 @@ The system is intentionally built without cloud-managed services (no AWS, no man
 ## Architecture
 
 ```
-                        ┌──────────────────────────────────────────────┐
-                        │              Data Sources                    │
-                        │  Sensor 1/2 ──▶ db ──▶ InfluxDB              │
-                        │  CoinGecko API ──▶ eth_collector ──▶ MongoDB │
-                        └───────────────┬──────────────────────────────┘
+                        ┌───────────────────────────────────────────────────┐
+                        │              Data Sources                         │
+                        │  CoinGecko API(BTC) ──▶ InfluxDB                  │
+                        │  CoinGecko API(ETH) ──▶ eth_collector ──▶ MongoDB │
+                        └───────────────┬───────────────────────────────────┘
                                         │
                         ┌───────────────▼──────────────────────────────┐
                         │                 Grafana                      │
