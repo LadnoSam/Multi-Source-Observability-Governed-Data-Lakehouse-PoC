@@ -61,18 +61,31 @@ The system is intentionally built without cloud-managed services (no AWS, no man
 ## Tech Stack
 
 | Layer                             | Technology         |
+
 | Time-series storage               | InfluxDB 2.7       |
+
 | Metrics collection                | Telegraf           |
+
 | Document storage                  | MongoDB 7          |
+
 | Custom API layer                  | FastAPI (Python)   |
+
 | Dashboards                        | Grafana 11.6.1     |
+
 | Grafana external datasource       | Infinity plugin    |
+
 | Identity & access management      | Keycloak 24        |
+
 | Table format                      | Apache Iceberg 1.6 |
+
 | REST catalog                      | Apache Polaris 1.7 |
+
 | Catalog metadata persistence      | PostgreSQL 16      |
+
 | Object storage                    | RustFS             |
+
 | Data processing engine            | Apache Spark 3.5   |
+
 | Orchestration                     | Docker Compose     |
 
 ## Repository Structure
